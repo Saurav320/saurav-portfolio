@@ -133,7 +133,7 @@ export function Hero() {
             <div className="w-full h-full rounded-full overflow-hidden border border-gray-700 bg-[#111827]">
 
               <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fit=crop&w=800&q=80"
+                src="/my_image.jpeg"
                 alt="Saurav Kumar"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
               />
