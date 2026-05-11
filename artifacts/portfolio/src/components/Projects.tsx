@@ -23,7 +23,7 @@ const projects = [
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
     techStack: ["Python", "ML", "NLP", "Flask"],
     githubUrl: "https://github.com/Saurav320/spam-email-detector",
-    liveUrl: "#",
+    liveUrl: "https://huggingface.co/spaces/Saurav-12/Email-spam-detection ",
   },
 
   {
@@ -42,24 +42,24 @@ const projects = [
     id: 4,
     title: "Analog Clock",
     description:
-      "Beautiful animated analog clock created using HTML, CSS and JavaScript with clean responsive UI.",
+      "A stylish and animated analog clock built using HTML, CSS, and JavaScript featuring smooth real-time movement and responsive modern UI.",
     imageUrl:
       "https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=1200&auto=format&fit=crop",
     techStack: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/Saurav320/analog-clock",
-    liveUrl: "#",
+    liveUrl: "https://analog-clock-omega-seven.vercel.app/",
   },
 
   {
     id: 5,
     title: "Smart Calculator",
     description:
-      "Responsive modern calculator project with futuristic interface and smooth button animations.",
+      "A modern and responsive calculator built with HTML, CSS, and JavaScript featuring smooth animations, futuristic UI, and real-time arithmetic operations.",
     imageUrl:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop",
     techStack: ["JavaScript", "HTML", "CSS"],
     githubUrl: "https://github.com/Saurav320/calculator",
-    liveUrl: "#",
+    liveUrl: "https://saurav320.github.io/calculator/",
   },
 
   {

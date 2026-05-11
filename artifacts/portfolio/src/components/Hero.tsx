@@ -97,21 +97,15 @@ export function Hero() {
             />
 
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/saurav"
               icon={<Linkedin size={22} />}
               label="LinkedIn"
             />
 
             <SocialLink
-              href="#"
+              href="https://www.instagram.com/sk.devhub_12/?hl=en"
               icon={<Instagram size={22} />}
               label="Instagram"
-            />
-
-            <SocialLink
-              href="mailto:example@gmail.com"
-              icon={<Mail size={22} />}
-              label="Email"
             />
           </div>
         </motion.div>

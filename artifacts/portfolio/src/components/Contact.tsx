@@ -125,14 +125,14 @@ export function Contact() {
                   icon={<Linkedin size={22} />}
                   title="LinkedIn"
                   value="linkedin.com/in/saurav"
-                  href="#"
+                  href="https://www.linkedin.com/in/saurav"
                 />
 
                 <ContactCard
                   icon={<Instagram size={22} />}
                   title="Instagram"
-                  value="@saurav.ai"
-                  href="#"
+                  value="@sk.devhub_12"
+                  href="https://www.instagram.com/sk.devhub_12/?hl=en"
                 />
               </div>
             </div>
