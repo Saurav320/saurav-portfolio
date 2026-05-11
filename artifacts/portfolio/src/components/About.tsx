@@ -1,86 +1,208 @@
 import { motion } from 'framer-motion';
-import { Terminal, GraduationCap, Award, GitMerge } from 'lucide-react';
+import {
+  Terminal,
+  GraduationCap,
+  Award,
+  GitMerge
+} from 'lucide-react';
 
 export function About() {
   return (
-    <section id="about" className="py-24 relative overflow-hidden bg-background">
+    <section
+      id="about"
+      className="py-24 relative overflow-hidden bg-background"
+    >
       <div className="container mx-auto px-4">
-        <motion.div 
+
+        {/* Heading */}
+        <motion.div
           className="mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold inline-block relative">
+          <h2 className="text-4xl md:text-5xl font-bold inline-block relative">
             About Me
-            <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-primary neon-border rounded-full" />
+            <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-cyan-400 rounded-full shadow-[0_0_20px_rgba(34,211,238,1)]" />
           </h2>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column: Terminal / Visual */}
+
+          {/* LEFT SIDE */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="w-full"
+            transition={{ duration: 0.7 }}
           >
-            <div className="glass-panel rounded-xl overflow-hidden shadow-lg border border-border">
-              <div className="bg-muted px-4 py-3 flex items-center gap-2 border-b border-border">
-                <div className="w-3 h-3 rounded-full bg-destructive" />
+
+            <div className="rounded-2xl overflow-hidden border border-cyan-500/20 bg-[#0f172a]/70 backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,255,0.08)]">
+
+              {/* Terminal Top */}
+              <div className="px-4 py-3 border-b border-cyan-500/10 flex items-center gap-2 bg-black/20">
+                <div className="w-3 h-3 rounded-full bg-red-500" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
                 <div className="w-3 h-3 rounded-full bg-green-500" />
-                <div className="ml-4 text-xs text-muted-foreground font-mono">alex_mercer.py</div>
+
+                <span className="ml-4 text-sm text-gray-400 font-mono">
+                  saurav_kumar.py
+                </span>
               </div>
-              <div className="p-6 font-mono text-sm leading-relaxed overflow-x-auto text-foreground">
-                <p><span className="text-secondary">class</span> <span className="text-accent font-bold">Developer</span>:</p>
-                <p className="pl-4"><span className="text-secondary">def</span> <span className="text-primary">__init__</span>(<span className="text-orange-400">self</span>):</p>
-                <p className="pl-8 text-muted-foreground"># Core attributes</p>
-                <p className="pl-8"><span className="text-orange-400">self</span>.name = <span className="text-green-400">"Alex Mercer"</span></p>
-                <p className="pl-8"><span className="text-orange-400">self</span>.role = <span className="text-green-400">"AI/ML Engineer"</span></p>
-                <p className="pl-8"><span className="text-orange-400">self</span>.focus = [<span className="text-green-400">"Deep Learning"</span>, <span className="text-green-400">"NLP"</span>, <span className="text-green-400">"CV"</span>]</p>
-                <br/>
-                <p className="pl-4"><span className="text-secondary">def</span> <span className="text-primary">execute_mission</span>(<span className="text-orange-400">self</span>):</p>
-                <p className="pl-8"><span className="text-secondary">return</span> <span className="text-green-400">"Build intelligent systems that solve real-world problems."</span></p>
-                <br/>
-                <p className="text-foreground animate-pulse">_</p>
+
+              {/* Code Section */}
+              <div className="p-6 font-mono text-sm md:text-base leading-8 text-gray-300 overflow-x-auto">
+
+                <p>
+                  <span className="text-purple-400">class</span>{" "}
+                  <span className="text-cyan-400 font-bold">Developer</span>:
+                </p>
+
+                <p className="pl-4">
+                  <span className="text-purple-400">def</span>{" "}
+                  <span className="text-blue-400">__init__</span>(self):
+                </p>
+
+                <p className="pl-8 text-gray-500">
+                  # Basic Information
+                </p>
+
+                <p className="pl-8">
+                  self.name ={" "}
+                  <span className="text-green-400">
+                    "Saurav Kumar"
+                  </span>
+                </p>
+
+                <p className="pl-8">
+                  self.location ={" "}
+                  <span className="text-green-400">
+                    "Bihar, India"
+                  </span>
+                </p>
+
+                <p className="pl-8">
+                  self.role ={" "}
+                  <span className="text-green-400">
+                    "AI/ML & Web Developer"
+                  </span>
+                </p>
+
+                <p className="pl-8">
+                  self.skills = [
+                  <span className="text-green-400">
+                    "Python",
+                    "React",
+                    "JavaScript",
+                    "HTML",
+                    "CSS",
+                    "Machine Learning"
+                  </span>
+                  ]
+                </p>
+
+                <br />
+
+                <p className="pl-4">
+                  <span className="text-purple-400">def</span>{" "}
+                  <span className="text-blue-400">build_projects</span>(self):
+                </p>
+
+                <p className="pl-8">
+                  <span className="text-purple-400">return</span>{" "}
+                  <span className="text-green-400">
+                    "Create futuristic AI & Web experiences."
+                  </span>
+                </p>
+
+                <br />
+
+                <p className="pl-4">
+                  <span className="text-purple-400">def</span>{" "}
+                  <span className="text-blue-400">goal</span>(self):
+                </p>
+
+                <p className="pl-8">
+                  <span className="text-purple-400">return</span>{" "}
+                  <span className="text-green-400">
+                    "Become a successful AI Engineer & Full Stack Developer."
+                  </span>
+                </p>
+
+                <br />
+
+                <p className="text-cyan-400 animate-pulse">_</p>
+
               </div>
             </div>
           </motion.div>
 
-          {/* Right Column: Text & Stats */}
+          {/* RIGHT SIDE */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.7 }}
           >
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I am a passionate AI/ML developer with expertise in deep learning, computer vision, and natural language processing. 
-              Currently exploring the boundaries of neural networks and looking for opportunities to deploy models in production environments.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Fascinated by the intersection of AI and human experience, I strive to build ethical, efficient, and scalable machine learning solutions.
+
+            <p className="text-lg text-gray-400 leading-relaxed mb-6">
+              I'm Saurav Kumar from Bihar, India. I enjoy learning web development
+              and building simple projects using Python, React, HTML, CSS and JavaScript.
             </p>
 
-            <div className="flex items-start gap-4 mb-8 p-4 rounded-lg bg-card border border-border">
-              <div className="p-3 rounded-full bg-primary/10 text-primary">
+            <p className="text-lg text-gray-400 leading-relaxed mb-8">
+              Currently improving my frontend and programming skills while exploring
+              basic Machine Learning concepts and modern web technologies through practice projects.
+            </p>
+            {/* Education Card */}
+            <div className="flex items-start gap-4 mb-8 p-5 rounded-2xl border border-cyan-500/20 bg-[#111827]/70 backdrop-blur">
+
+              <div className="p-3 rounded-full bg-cyan-500/10 text-cyan-400">
                 <GraduationCap size={24} />
               </div>
+
               <div>
-                <h4 className="font-heading font-semibold text-lg">M.S. in Computer Science</h4>
-                <p className="text-muted-foreground text-sm">Stanford University • 2021 - 2023</p>
-                <p className="text-sm mt-1">Focus: Artificial Intelligence & Machine Learning</p>
+                <h4 className="font-semibold text-xl text-white">
+                  Student & Self Learner
+                </h4>
+
+                <p className="text-gray-400 text-sm">
+                  Exploring AI, Web Development & Modern Technologies
+                </p>
+
+                <p className="text-sm mt-2 text-gray-500">
+                  Focus: Machine Learning, React, Python & Creative UI Design
+                </p>
               </div>
             </div>
 
+            {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <StatCard icon={<Terminal size={20} />} value="15+" label="Projects" />
-              <StatCard icon={<Award size={20} />} value="5+" label="Certifications" />
-              <StatCard icon={<GitMerge size={20} />} value="500+" label="Commits" />
-              <StatCard icon={<GraduationCap size={20} />} value="3+" label="Publications" />
+
+              <StatCard
+                icon={<Terminal size={20} />}
+                value="10+"
+                label="Projects"
+              />
+
+              <StatCard
+                icon={<Award size={20} />}
+                value="5+"
+                label="Skills"
+              />
+
+              <StatCard
+                icon={<GitMerge size={20} />}
+                value="20+"
+                label="Commits"
+              />
+
+              <StatCard
+                icon={<GraduationCap size={20} />}
+                value="AI"
+                label="Focused"
+              />
             </div>
           </motion.div>
         </div>
@@ -89,12 +211,29 @@ export function About() {
   );
 }
 
-function StatCard({ icon, value, label }: { icon: React.ReactNode, value: string, label: string }) {
+function StatCard({
+  icon,
+  value,
+  label
+}: {
+  icon: React.ReactNode;
+  value: string;
+  label: string;
+}) {
   return (
-    <div className="flex flex-col items-center justify-center p-4 glass-panel rounded-lg border-border/50 text-center hover:border-primary/50 transition-colors">
-      <div className="text-primary mb-2">{icon}</div>
-      <div className="font-heading font-bold text-2xl text-foreground">{value}</div>
-      <div className="text-xs text-muted-foreground uppercase tracking-wider">{label}</div>
+    <div className="flex flex-col items-center justify-center p-5 rounded-2xl border border-cyan-500/10 bg-[#111827]/70 backdrop-blur hover:border-cyan-400 hover:shadow-[0_0_20px_rgba(34,211,238,0.15)] transition duration-300">
+
+      <div className="text-cyan-400 mb-2">
+        {icon}
+      </div>
+
+      <div className="font-bold text-2xl text-white">
+        {value}
+      </div>
+
+      <div className="text-xs uppercase tracking-widest text-gray-400 mt-1">
+        {label}
+      </div>
     </div>
   );
 }
