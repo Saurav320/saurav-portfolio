@@ -107,6 +107,12 @@ export function Hero() {
               icon={<Instagram size={22} />}
               label="Instagram"
             />
+
+            <SocialLink
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=saurav456skk@gmail.com&su=Portfolio%20Contact"
+              icon={<Mail size={22} />}
+              label="Email"
+            />
           </div>
         </motion.div>
 

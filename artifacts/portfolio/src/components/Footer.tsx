@@ -40,19 +40,19 @@ export function Footer() {
             />
 
             <SocialIcon
-              href="#"
+              href="https://www.linkedin.com/in/saurav"
               icon={<Linkedin size={20} />}
               label="LinkedIn"
             />
 
             <SocialIcon
-              href="#"
+              href="https://www.instagram.com/sk.devhub_12/?hl=en"
               icon={<Instagram size={20} />}
               label="Instagram"
             />
 
             <SocialIcon
-              href="mailto:saurav@example.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=saurav456skk@gmail.com&su=Portfolio%20Contact"
               icon={<Mail size={20} />}
               label="Email"
             />
