@@ -25,8 +25,7 @@ export function Footer() {
             </h2>
 
             <p className="text-gray-400 max-w-sm leading-relaxed">
-              Building futuristic AI systems, modern web experiences and
-              intelligent applications using React, Python and Machine Learning.
+             Learning web development and building creative projects using Python, React and Machine Learning.
             </p>
           </div>
 
