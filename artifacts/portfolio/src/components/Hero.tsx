@@ -13,10 +13,10 @@ import { ParticleBackground } from './ParticleBackground';
 
 export function Hero() {
   const roles = [
-    "AI/ML Developer",
-    "Python Developer",
-    "React Developer",
-    "Machine Learning Enthusiast"
+    "Self-Taught Developer",
+    "Python Learner",
+    "React Enthusiast",
+    "Exploring Machine Learning"
   ];
 
   const typedText = useTypingEffect(roles, 80, 40, 2000);
@@ -44,7 +44,7 @@ export function Hero() {
 
           {/* Badge */}
           <div className="inline-block px-4 py-2 mb-6 rounded-full border border-cyan-400/30 bg-cyan-400/10 text-cyan-300 text-sm font-medium backdrop-blur">
-            🚀 Open For Opportunities
+            🚀 Building Projects & Learning
           </div>
 
           {/* Heading */}
@@ -97,7 +97,7 @@ export function Hero() {
             />
 
             <SocialLink
-              href="https://www.linkedin.com/in/saurav"
+              href="https://www.linkedin.com/in/saurav-kumar-122835332/"
               icon={<Linkedin size={22} />}
               label="LinkedIn"
             />
@@ -124,25 +124,50 @@ export function Hero() {
           transition={{ duration: 1 }}
         >
 
-          {/* Glow */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 opacity-20 blur-3xl animate-pulse" />
+          {/* Animated Glow */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 opacity-30 blur-3xl animate-pulse" />
+
+          {/* Rotating Ring */}
+          <motion.div
+            className="absolute inset-0 rounded-full border-2 border-cyan-400/30"
+            animate={{ rotate: 360 }}
+            transition={{
+              duration: 15,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+          />
 
           {/* Image Container */}
-          <div className="relative w-full h-full rounded-full border border-cyan-400/30 p-4 backdrop-blur-xl">
+          <div className="relative w-full h-full rounded-full p-4 border border-cyan-400/30 backdrop-blur-xl">
 
-            <div className="w-full h-full rounded-full overflow-hidden border border-gray-700 bg-[#111827]">
+            <div className="w-full h-full rounded-full overflow-hidden border-2 border-cyan-500/20 bg-[#111827] shadow-[0_0_40px_rgba(34,211,238,0.25)]">
 
               <img
                 src="/my_image.jpeg"
                 alt="Saurav Kumar"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
+                className="w-full h-full object-cover hover:scale-110 transition-all duration-700"
               />
             </div>
 
             {/* Floating Dots */}
-            <div className="absolute top-10 right-5 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_20px_rgba(34,211,238,1)] animate-bounce" />
+            <motion.div
+              className="absolute top-10 right-5 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_20px_rgba(34,211,238,1)]"
+              animate={{ y: [-10, 10, -10] }}
+              transition={{
+                duration: 3,
+                repeat: Infinity
+              }}
+            />
 
-            <div className="absolute bottom-10 left-5 w-3 h-3 rounded-full bg-purple-500 shadow-[0_0_20px_rgba(168,85,247,1)] animate-ping" />
+            <motion.div
+              className="absolute bottom-10 left-5 w-3 h-3 rounded-full bg-purple-500 shadow-[0_0_20px_rgba(168,85,247,1)]"
+              animate={{ y: [10, -10, 10] }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity
+              }}
+            />
           </div>
         </motion.div>
       </div>

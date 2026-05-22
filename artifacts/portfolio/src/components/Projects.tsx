@@ -73,6 +73,22 @@ const projects = [
     githubUrl: "https://github.com/Saurav320/birthday",
     liveUrl: "#",
   },
+
+  {
+  id: 7,
+  title: "Modern Login UI",
+
+  description:
+    "A modern and responsive login page with clean design, smooth UI elements and social login options built using HTML, CSS and JavaScript.",
+
+  imageUrl: "/login-page.png",
+
+  techStack: ["HTML", "CSS", "JavaScript"],
+
+  githubUrl: "https://github.com/Saurav320/login-page",
+
+  liveUrl: "#",
+},
 ];
 
 export function Projects() {

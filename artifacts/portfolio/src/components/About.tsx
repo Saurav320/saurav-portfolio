@@ -85,7 +85,7 @@ export function About() {
                 <p className="pl-8">
                   self.role ={" "}
                   <span className="text-green-400">
-                    "AI/ML & Web Developer"
+                    ""Learning & Building Creative Projects""
                   </span>
                 </p>
 
@@ -93,7 +93,7 @@ export function About() {
                   self.skills = [
                   <span className="text-green-400">
                     "Python",
-                    "React",
+                    "React Learning",
                     "JavaScript",
                     "HTML",
                     "CSS",
@@ -112,7 +112,7 @@ export function About() {
                 <p className="pl-8">
                   <span className="text-purple-400">return</span>{" "}
                   <span className="text-green-400">
-                    "Create futuristic AI & Web experiences."
+                    ""Exploring technology through projects and learning"."
                   </span>
                 </p>
 
@@ -126,7 +126,7 @@ export function About() {
                 <p className="pl-8">
                   <span className="text-purple-400">return</span>{" "}
                   <span className="text-green-400">
-                    "Become a successful AI Engineer & Full Stack Developer."
+                    ""Growing as a developer through learning and projects""
                   </span>
                 </p>
 
@@ -168,11 +168,11 @@ export function About() {
                 </h4>
 
                 <p className="text-gray-400 text-sm">
-                  Exploring AI, Web Development & Modern Technologies
+                  "Learning Web Development & Exploring New Technologies"
                 </p>
 
                 <p className="text-sm mt-2 text-gray-500">
-                  Focus: Machine Learning, React, Python & Creative UI Design
+                  Focus: Web Development, Python & Learning New Technologies
                 </p>
               </div>
             </div>
@@ -194,7 +194,7 @@ export function About() {
 
               <StatCard
                 icon={<GitMerge size={20} />}
-                value="20+"
+                value="30+"
                 label="Commits"
               />
 

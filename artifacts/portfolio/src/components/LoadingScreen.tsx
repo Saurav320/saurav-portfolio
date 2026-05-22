@@ -48,7 +48,7 @@ export function LoadingScreen() {
           <div className="absolute inset-0 flex items-center justify-center">
 
             <h1 className="text-xl md:text-2xl font-black tracking-widest bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-              SAURAV://AI
+              SAURAV.OS
             </h1>
           </div>
         </motion.div>

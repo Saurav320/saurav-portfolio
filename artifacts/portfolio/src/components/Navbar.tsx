@@ -46,7 +46,7 @@ export function Navbar() {
           className="text-xl font-heading font-bold text-gradient tracking-tight"
           data-testid="link-logo"
         >
-          SAURAV://AI
+          SAURAV.OS
         </a>
 
         {/* Desktop Nav */}

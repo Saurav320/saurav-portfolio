@@ -124,8 +124,8 @@ export function Contact() {
                 <ContactCard
                   icon={<Linkedin size={22} />}
                   title="LinkedIn"
-                  value="linkedin.com/in/saurav"
-                  href="https://www.linkedin.com/in/saurav"
+                  value="linkedin.com/in/saurav-kumar"
+                  href="https://www.linkedin.com/in/saurav-kumar-122835332/"
                 />
 
                 <ContactCard

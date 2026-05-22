@@ -21,7 +21,7 @@ export function Footer() {
           <div className="text-center md:text-left">
 
             <h2 className="text-3xl font-black tracking-widest bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent mb-3">
-              SAURAV://AI
+              SAURAV.OS
             </h2>
 
             <p className="text-gray-400 max-w-sm leading-relaxed">
@@ -40,7 +40,7 @@ export function Footer() {
             />
 
             <SocialIcon
-              href="https://www.linkedin.com/in/saurav"
+              href="https://www.linkedin.com/in/saurav-kumar-122835332/"
               icon={<Linkedin size={20} />}
               label="LinkedIn"
             />
@@ -63,11 +63,11 @@ export function Footer() {
         <div className="border-t border-cyan-500/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
 
           <p>
-            © {new Date().getFullYear()} Saurav Kumar. All rights reserved.
+            © {new Date().getFullYear()} Saurav Kumar • Designed & Developed 🚀✨
           </p>
 
           <p className="flex items-center gap-1">
-            Built with React, TypeScript &
+            Designed & Developed 💻✨ by Saurav Kumar
 
             <span className="text-cyan-400 animate-pulse">
               ❤️

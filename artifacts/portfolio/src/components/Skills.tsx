@@ -92,9 +92,9 @@ export function Skills() {
           transition={{ duration: 0.7 }}
         >
 
-          <h2 className="text-4xl md:text-5xl font-bold inline-block relative">
+          <h2 className="text-4xl md:text-xl font-bold inline-block relative text-blue-900 dark:text-cyan-300">
 
-            Technical Arsenal
+            What I'm Learning
 
             <span className="absolute -bottom-2 left-1/4 right-1/4 h-1 bg-cyan-400 rounded-full shadow-[0_0_20px_rgba(34,211,238,1)]" />
           </h2>

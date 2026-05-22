@@ -48,7 +48,7 @@ export function Achievements() {
           </h2>
 
           <p className="text-cyan-400 font-mono mt-6 tracking-[0.3em] text-sm uppercase">
-            SAURAV://AI
+            SAURAV.OS
           </p>
         </motion.div>
 
