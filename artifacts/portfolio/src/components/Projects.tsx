@@ -14,7 +14,7 @@ const projects = [
     liveUrl: "https://huggingface.co/spaces/Saurav-12/Face-Rating",
   },
 
-  { 
+  {
     id: 2,
     title: "Spam Email Detector",
     description:
@@ -28,14 +28,18 @@ const projects = [
 
   {
     id: 3,
-    title: "Cybernetic Portfolio",
+    title: "Personal Portfolio",
+
     description:
-      "Modern futuristic portfolio website with cyberpunk UI, animations and responsive design using React and Tailwind.",
-    imageUrl:
-      "/portfolio.png",
-    techStack: ["React", "Tailwind", "Vite", "JavaScript"],
+      "A modern and responsive personal portfolio website with futuristic UI, smooth animations and interactive design built using React and Tailwind CSS.",
+
+    imageUrl: "/portfolio.png",
+
+    techStack: ["React", "Tailwind CSS", "Vite", "JavaScript"],
+
     githubUrl: "https://github.com/Saurav320/Saurav320",
-    liveUrl: "#",
+
+    liveUrl: "https://saurav-portfolio-black.vercel.app",
   },
 
   {
@@ -75,20 +79,20 @@ const projects = [
   },
 
   {
-  id: 7,
-  title: "Modern Login UI",
+    id: 7,
+    title: "Modern Login UI",
 
-  description:
-    "A modern and responsive login page with clean design, smooth UI elements and social login options built using HTML, CSS and JavaScript.",
+    description:
+      "A modern and responsive login page with clean design, smooth UI elements and social login options built using HTML, CSS and JavaScript.",
 
-  imageUrl: "/login-page.png",
+    imageUrl: "/login-page.png",
 
-  techStack: ["HTML", "CSS", "JavaScript"],
+    techStack: ["HTML", "CSS", "JavaScript"],
 
-  githubUrl: "https://github.com/Saurav320/login-page",
+    githubUrl: "https://github.com/Saurav320/login-page",
 
-  liveUrl: "https://saurav320.github.io/lgpage/",
-},
+    liveUrl: "https://saurav320.github.io/lgpage/",
+  },
 ];
 
 export function Projects() {
