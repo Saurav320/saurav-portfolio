@@ -71,7 +71,7 @@ const projects = [
       "https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=1200&auto=format&fit=crop",
     techStack: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/Saurav320/birthday",
-    liveUrl: "#",
+    liveUrl: "https://anshu-gilt.vercel.app/",
   },
 
   {
@@ -87,7 +87,7 @@ const projects = [
 
   githubUrl: "https://github.com/Saurav320/login-page",
 
-  liveUrl: "#",
+  liveUrl: "https://saurav320.github.io/lgpage/",
 },
 ];
 
