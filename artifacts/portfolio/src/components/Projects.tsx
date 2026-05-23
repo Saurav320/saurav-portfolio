@@ -14,7 +14,7 @@ const projects = [
     liveUrl: "https://huggingface.co/spaces/Saurav-12/Face-Rating",
   },
 
-  {
+  { 
     id: 2,
     title: "Spam Email Detector",
     description:
@@ -32,7 +32,7 @@ const projects = [
     description:
       "Modern futuristic portfolio website with cyberpunk UI, animations and responsive design using React and Tailwind.",
     imageUrl:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+      "/portfolio.png",
     techStack: ["React", "Tailwind", "Vite", "JavaScript"],
     githubUrl: "https://github.com/Saurav320/Saurav320",
     liveUrl: "#",
