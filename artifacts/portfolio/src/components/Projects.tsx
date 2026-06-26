@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 
+import { Link } from "react-router-dom";
+
 const projects = [
   {
     id: 1,
@@ -95,7 +97,11 @@ const projects = [
   },
 ];
 
-export function Projects() {
+interface ProjectsProps {
+  showAll?: boolean;
+}
+
+export function Projects({ showAll = false }: ProjectsProps) {
   return (
     <section
       id="projects"
@@ -122,7 +128,7 @@ export function Projects() {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
 
-          {projects.map((project, index) => (
+          {(showAll ? projects : projects.slice(0, 2)).map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 40 }}
@@ -196,6 +202,29 @@ export function Projects() {
           ))}
         </div>
       </div>
+      {/* View All Projects Button */}
+      {!showAll && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex justify-center mt-14"
+        >
+          <Link to="/projects"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-cyan-500 text-black font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.6)]"
+          >
+            <span className="relative z-10">View All Projects</span>
+
+            <ExternalLink
+              size={20}
+              className="relative z-10 group-hover:translate-x-1 transition-transform"
+            />
+
+            <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </Link>
+        </motion.div>
+      )}
     </section>
   );
 }
