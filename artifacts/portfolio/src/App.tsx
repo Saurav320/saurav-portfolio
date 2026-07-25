@@ -8,6 +8,7 @@ import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Certificates } from "@/components/Certificates";
+import CertificatesPage from "./pages/CertificatesPage";
 import { Achievements } from "@/components/Achievements";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -44,6 +45,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/certificates" element={<CertificatesPage />} />
           </Routes>
         </main>
 
