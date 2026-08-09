@@ -116,60 +116,138 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* RIGHT SIDE IMAGE */}
-        <motion.div
-          className="relative lg:ml-auto w-full max-w-md aspect-square mx-auto"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-        >
+      {/* RIGHT SIDE IMAGE */}
+<motion.div
+  className="relative lg:ml-auto w-full max-w-md mx-auto pb-16"
+  initial={{ opacity: 0, scale: 0.85 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+>
+  {/* IMAGE / ORBIT AREA */}
+  <div className="relative aspect-square w-full">
 
-          {/* Animated Glow */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 opacity-30 blur-3xl animate-pulse" />
+    {/* Soft Outer Glow */}
+    <motion.div
+      className="absolute inset-4 rounded-full bg-cyan-400/10 blur-3xl"
+      animate={{
+        scale: [1, 1.08, 1],
+        opacity: [0.3, 0.5, 0.3],
+      }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    />
 
-          {/* Rotating Ring */}
-          <motion.div
-            className="absolute inset-0 rounded-full border-2 border-cyan-400/30"
-            animate={{ rotate: 360 }}
-            transition={{
-              duration: 15,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-          />
+    {/* Horizontal Orbit */}
+    <motion.div
+      className="absolute left-[-5%] top-1/2 w-[110%] h-32 rounded-[50%] border border-cyan-400/20"
+      animate={{ rotate: 360 }}
+      transition={{
+        duration: 18,
+        repeat: Infinity,
+        ease: "linear",
+      }}
+    />
 
-          {/* Image Container */}
-          <div className="relative w-full h-full rounded-full p-4 border border-cyan-400/30 backdrop-blur-xl">
+    {/* Vertical Orbit */}
+    <motion.div
+      className="absolute left-1/2 top-[5%] w-32 h-[90%] rounded-[50%] border border-blue-400/10"
+      animate={{ rotate: -360 }}
+      transition={{
+        duration: 22,
+        repeat: Infinity,
+        ease: "linear",
+      }}
+    />
 
-            <div className="w-full h-full rounded-full overflow-hidden border-2 border-cyan-500/20 bg-[#111827] shadow-[0_0_40px_rgba(34,211,238,0.25)]">
+    {/* Main Photo */}
+    <motion.div
+      className="absolute inset-5 rounded-full"
+      animate={{ y: [0, -6, 0] }}
+      transition={{
+        duration: 5,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      {/* Outer Cyan Ring */}
+      <div className="absolute inset-0 rounded-full border-2 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.35)]" />
 
-              <img
-                src="/my_image.jpeg"
-                alt="Saurav Kumar"
-                className="w-full h-full object-cover hover:scale-110 transition-all duration-700"
-              />
-            </div>
+      {/* Inner Ring */}
+      <div className="absolute inset-3 rounded-full border border-cyan-400/20" />
 
-            {/* Floating Dots */}
-            <motion.div
-              className="absolute top-10 right-5 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_20px_rgba(34,211,238,1)]"
-              animate={{ y: [-10, 10, -10] }}
-              transition={{
-                duration: 3,
-                repeat: Infinity
-              }}
-            />
+      {/* Actual Image */}
+      <div className="absolute inset-4 rounded-full overflow-hidden bg-[#071522]">
+        <img
+          src="/my_image.jpeg"
+          alt="Saurav Kumar"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </motion.div>
 
-            <motion.div
-              className="absolute bottom-10 left-5 w-3 h-3 rounded-full bg-purple-500 shadow-[0_0_20px_rgba(168,85,247,1)]"
-              animate={{ y: [10, -10, 10] }}
-              transition={{
-                duration: 2.5,
-                repeat: Infinity
-              }}
-            />
-          </div>
-        </motion.div>
+    {/* Cyan Dot */}
+    <motion.div
+      className="absolute top-[17%] right-[6%] w-3 h-3 rounded-full bg-cyan-400 shadow-[0_0_18px_rgba(34,211,238,1)]"
+      animate={{
+        y: [-8, 8, -8],
+        x: [0, 4, 0],
+      }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    />
+
+    {/* Purple Dot */}
+    <motion.div
+      className="absolute bottom-[20%] left-[7%] w-2.5 h-2.5 rounded-full bg-purple-500 shadow-[0_0_15px_rgba(168,85,247,1)]"
+      animate={{
+        y: [8, -8, 8],
+        x: [0, -4, 0],
+      }}
+      transition={{
+        duration: 3.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    />
+
+    {/* Small Blue Dot */}
+    <motion.div
+      className="absolute top-[10%] left-[20%] w-1.5 h-1.5 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(59,130,246,1)]"
+      animate={{
+        opacity: [0.3, 1, 0.3],
+        scale: [0.8, 1.3, 0.8],
+      }}
+      transition={{
+        duration: 2.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    />
+  </div>
+
+  {/* Availability */}
+  <motion.div
+    className="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-3 px-5 py-3 rounded-full border border-cyan-400/20 bg-[#071522]/95 backdrop-blur-xl whitespace-nowrap"
+    initial={{ opacity: 0, y: 15 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.8, duration: 0.6 }}
+  >
+    <span className="relative flex h-2.5 w-2.5">
+      <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping" />
+      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-400 shadow-[0_0_12px_rgba(74,222,128,0.9)]" />
+    </span>
+
+    <span className="text-sm text-gray-400">
+      Available for learning &amp; collaboration
+    </span>
+  </motion.div>
+</motion.div>
       </div>
     </section>
   );
